@@ -55,10 +55,16 @@ somewhere else. Write the address as a variable instead:
 |---|---|
 | `{{instance.url}}` | the address this page is being served from |
 | `{{instance.name}}` | this instance's configured name |
+| `{{handbook.pages}}` | how many pages this documentation site has |
 
 So `Open {{instance.url}}/app` renders as **{{instance.url}}/app** here, and as
 their own address for anyone reading the same page on another instance. That is
 what lets this handbook be seeded onto any deployment and stay correct.
+
+The page count is there for the same reason. A sentence that says "thirty pages"
+is wrong the moment somebody writes the thirty-first, and nobody goes back to fix
+it — a number written into prose is a number that will eventually be a lie. This
+site has {{handbook.pages}}.
 
 Substitution happens when the page renders, not when it is saved, so the stored
 content is portable. It is deliberately not a template language — there are no

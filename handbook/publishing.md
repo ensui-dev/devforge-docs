@@ -34,8 +34,9 @@ tasks, and your team list stay private**.
 
 ## What gets published
 
-Everything except pages marked internal. That is the useful default: a twenty-page
-handbook should not need twenty separate decisions.
+Everything except pages marked internal. That is the useful default: a
+{{handbook.pages}}-page handbook should not need {{handbook.pages}} separate
+decisions.
 
 The consequence worth understanding: **a page you write later is public as soon as
 you save it.** So DevForge never lets that state hide.

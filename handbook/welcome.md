@@ -53,6 +53,6 @@ See **DevForge is open source**, then **Self-hosting DevForge**.
 - Want the concept first? Read **The typed reference graph**.
 - Wiring up a client? Start at **API reference: authentication**.
 
-> This handbook is itself a DevForge workspace. Every page you are reading was
-> created through the API, and the **Connections** panel on the right of each
-> document is real. Click through it.
+> This handbook is itself a DevForge workspace — all {{handbook.pages}} pages of
+> it. Every page you are reading was created through the API, and the
+> **Connections** panel on the right of each document is real. Click through it.
