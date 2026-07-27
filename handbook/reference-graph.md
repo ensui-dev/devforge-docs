@@ -57,10 +57,42 @@ other page gets its backlink automatically. Nobody has to remember to update it.
   no delete control, because the edge is not theirs to remove.
 - Deleting a document removes every edge touching it.
 
+## It tells you when two pages fall out of step
+
+A graph that only tells you what *is* connected leaves the hard part to you. The
+Connections panel also says which of those connections have drifted:
+
+| On | It means |
+|---|---|
+| An outgoing link | The page you point at has changed since this one was last written, so what you wrote about it may no longer be true |
+| A backlink | The reverse — you changed this page, and the page depending on it has not been touched since |
+
+Both are the same fact seen from either end, so whichever page you happen to open,
+the one that needs attention is marked.
+
+Press the marker and you get exactly what changed on the other page **since your
+page was last written** — not its whole history, which is a different question
+with its own screen.
+
+### It clears itself
+
+There is no button to acknowledge anything. A page is out of step when the page it
+points at has a newer revision than its own, so editing it — which is what you were
+going to do anyway — is what brings the two back into step.
+
+That has one consequence worth knowing: reading the change and deciding *nothing
+needs to change here* does not clear the marker, because nothing recorded that you
+looked. Adding a line saying why it is still correct does, and is worth more to the
+next reader.
+
+Saving a document without changing anything writes no revision, so it does not
+count either. Only a real change moves a page forward.
+
 ## Using it well
 
 Prefer `DEPENDS_ON` when you mean "this could invalidate that". It is the edge
-you will traverse when planning a change.
+you will traverse when planning a change — and the one whose marker will tell you
+that something you relied on has moved.
 
 Use `SUPERSEDES` instead of deleting a decision record. The history is usually
 the valuable part.
