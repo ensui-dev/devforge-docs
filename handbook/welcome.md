@@ -54,5 +54,7 @@ See **DevForge is open source**, then **Self-hosting DevForge**.
 - Wiring up a client? Start at **API reference: authentication**.
 
 > This handbook is itself a DevForge workspace — all {{handbook.pages}} pages of
-> it. Every page you are reading was created through the API, and the
-> **Connections** panel on the right of each document is real. Click through it.
+> it. They are markdown in
+> [devforge-docs](https://github.com/ensui-dev/devforge-docs), synced here on every
+> push, and the **Connections** panel on the right of each document is the real
+> reference graph, declared in those files' front matter. Click through it.
